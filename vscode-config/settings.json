@@ -1,7 +1,7 @@
 {
   "grunt.autoDetect": "on",
   "git.terminalGitEditor": true,
-  "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
+  "terminal.integrated.fontFamily": "FiraCode Nerd Font",
   "terminal.integrated.fontSize": 13,
   "editor.codeActionsOnSave": {},
   "git.autofetch": true,
@@ -60,11 +60,10 @@
     "sml": "cd $dir && sml $fileName"
   },
   "cmake.configureOnOpen": true,
-  "workbench.iconTheme": "vscode-icons",
+  "workbench.iconTheme": "catppuccin-mocha",
   "[python]": {
     "editor.formatOnType": true
   },
-  "workbench.colorTheme": "Tokyo Night Storm",
   "cmake.autoSelectActiveFolder": false,
   "cmake.saveBeforeBuild": false,
   "cmake.configureOnEdit": false,
@@ -125,7 +124,7 @@
       "before": ["<C-a>"],
       "commands": ["editor.action.selectAll"],
       "silent": true
-    },
+    }
     // {
     //   "key": "alt+up",
     //   "command": "editor.action.moveLinesUpAction",
@@ -309,5 +308,6 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "prettier.jsxSingleQuote": true,
-  "editor.tabSize": 2
+  "editor.tabSize": 2,
+  "workbench.colorTheme": "Catppuccin Mocha"
 }
