@@ -61,41 +61,38 @@
   },
   "cmake.configureOnOpen": true,
   "workbench.iconTheme": "catppuccin-mocha",
-  "[python]": {
-    "editor.formatOnType": true
-  },
+
   "cmake.autoSelectActiveFolder": false,
   "cmake.saveBeforeBuild": false,
   "cmake.configureOnEdit": false,
   "extensions.ignoreRecommendations": true,
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
-  "[typescriptreact]": {
+
+  "prettier.documentSelectors": [
+    "**/*.{js,jsx,ts,tsx,vue,html,css,scss,less,json,md,mdx,graphql,yaml,yml}"
+  ],
+  "[python]": {
+    "editor.formatOnType": true
+  },
+  "[php]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "[css]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
+
+  "prettier.singleQuote": true,
+  "prettier.trailingComma": "none",
+  "prettier.singleAttributePerLine": true,
+  "prettier.semi": false,
+  "prettier.jsxSingleQuote": true,
+  "editor.tabSize": 2,
+  "editor.fontLigatures": false,
+
+// Discord
   "discord.lowerDetailsIdling": "some stuff...",
   "discord.detailsIdling": "some stuff...",
   "discord.largeImageIdling": "some stuff...",
   "discord.lowerDetailsNoWorkspaceFound": "some workspace...",
-  "[scss]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[javascriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "editor.fontLigatures": false,
+
 
   // Vim config
   "vim.easymotion": true,
@@ -299,17 +296,11 @@
     "<C-k>": false,
     "<C-o>": false
   },
-  "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "prettier.singleQuote": true,
-  "prettier.trailingComma": "none",
-  "prettier.singleAttributePerLine": true,
-  "prettier.semi": false,
-  "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "prettier.jsxSingleQuote": true,
-  "editor.tabSize": 2,
-  "workbench.colorTheme": "Catppuccin Mocha"
+
+  "workbench.colorTheme": "Catppuccin Mocha",
+  "files.autoSave": "afterDelay",
+  "editor.formatOnSave": true,
+  "files.autoSaveDelay": 5000,
+  "editor.fontFamily": "FiraCode Nerd Font"
+
 }

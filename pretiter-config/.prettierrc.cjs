@@ -1,4 +1,5 @@
-{
+// Updated by Dominic-github
+module.exports = {
   "arrowParens": "always",
   "semi": false,
   "trailingComma": "none",

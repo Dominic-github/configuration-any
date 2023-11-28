@@ -1,4 +1,4 @@
-// Updated by Dominic-github on August 3 2023
+// Updated by Dominic-github
 module.exports = {
   env: { browser: true, es2020: true, node: true },
   extends: [
@@ -7,8 +7,8 @@ module.exports = {
     'plugin:react/jsx-runtime',
     'plugin:react-hooks/recommended'
   ],
-  parserOptions: { ecmaVersion: 'latest', sourceType: 'module' },
-  settings: { react: { version: '18.2' } },
+  parserOptions: { 'ecmaVersion': 'latest', 'sourceType': 'module' },
+  settings: { 'react': { 'version': '18.2' } },
   plugins: ['react', 'react-hooks', 'react-refresh'],
   rules: {
     'react-refresh/only-export-components': 'warn',
@@ -27,9 +27,9 @@ module.exports = {
     'no-multiple-empty-lines': 1,
     'space-before-blocks': ['error', 'always'],
     'object-curly-spacing': [1, 'always'],
-    indent: ['warn', 2],
-    semi: [1, 'never'],
-    quotes: ['error', 'single'],
+    'indent': ['warn', 2],
+    'semi': [1, 'never'],
+    'quotes': ['error', 'single'],
     'array-bracket-spacing': 1,
     'linebreak-style': 0,
     'no-unexpected-multiline': 'warn',
@@ -41,15 +41,15 @@ module.exports = {
     'prettier/prettier': [
       'warn',
       {
-        arrowParens: 'always',
-        semi: false,
-        trailingComma: 'none',
-        tabWidth: 2,
-        endOfLine: 'auto',
-        useTabs: false,
-        singleQuote: true,
-        printWidth: 80,
-        jsxSingleQuote: true
+        'arrowParens': 'always',
+        'semi': false,
+        'trailingComma': 'none',
+        'tabWidth': 2,
+        'endOfLine': 'auto',
+        'useTabs': false,
+        'singleQuote': true,
+        'printWidth': 80,
+        'jsxSingleQuote': true
       }
     ]
   }
