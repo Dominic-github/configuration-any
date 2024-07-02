@@ -1,23 +1,12 @@
 // Place your key bindings in this file to override the defaults
 [
   // Move line up and down arrow
-  {
-    "key": "alt+k",
-    "command": "editor.action.moveLinesUpAction",
-    "when": "editorTextFocus"
-  },
 
   {
-    "key": "alt+i",
-    "command": "workbench.action.terminal.toggleTerminal",
-    "when": "terminal.active"
+    "key": "ctrl+w",
+    "command": "",
+    "when": "explorerViewletFocus && foldersViewVisible && !inputFocus && workbench.explorer.openEditorsView.active && vim.active && vim.mode!='Insert'"
   },
-  {
-    "key": "alt+j",
-    "command": "editor.action.moveLinesDownAction",
-    "when": "editorTextFocus"
-  },
-
   {
     "key": "ctrl+h",
     "command": "workbench.action.navigateLeft",
@@ -94,6 +83,22 @@
   // Alt
 
   {
+    "key": "alt+k",
+    "command": "editor.action.moveLinesUpAction",
+    "when": "editorTextFocus"
+  },
+
+  {
+    "key": "alt+i",
+    "command": "workbench.action.terminal.toggleTerminal",
+    "when": "terminal.active"
+  },
+  {
+    "key": "alt+j",
+    "command": "editor.action.moveLinesDownAction",
+    "when": "editorTextFocus"
+  },
+  {
     "key": "alt+j",
     "command": "selectNextSuggestion",
     "when": "editorTextFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible"
@@ -112,10 +117,5 @@
     "key": "alt+k",
     "command": "workbench.action.quickOpenNavigatePrevious",
     "when": "inQuickOpen"
-  },
-  {
-    "key": "ctrl+w",
-    "command": "-workbench.action.closeGroup",
-    "when": "activeEditorGroupEmpty && multipleEditorGroups"
   }
 ]
