@@ -50,17 +50,48 @@
 
   "vim.insertModeKeyBindings": [
     {
+      // Special case: when in first editor group (pane), go to sidebar
+      // if visible.
+      "key": "Ctrl+h",
+      "command": "workbench.explorer.fileView.focus",
+      "when": "editorTextFocus && vim.active && vim.mode != 'Insert' && activeEditorGroupIndex == 1 && explorerViewletVisible"
+    },
+
+    // {
+    //   "before": ["j", "j"],
+    //   "after": ["<Esc>"]
+    // },
+    // {
+    //   "before": ["k", "k"],
+    //   "after": ["<Esc>"]
+    // },
+    // {
+    //   "before": ["h", "h"],
+    //   "after": ["<Esc>"]
+    // }
+
+    {
       "before": ["<C-a>"],
       "commands": ["editor.action.selectAll"],
       "silent": true
     }
+    // {
+    //   "key": "alt+up",
+    //   "command": "editor.action.moveLinesUpAction",
+    //   "when": "editorTextFocus && !editorReadOnly"
+    // },
+    // {
+    //   "key": "alt+down",
+    //   "command": "editor.action.moveLinesUpAction",
+    //   "when": "editor.action.moveLinesDownAction"
+    // }
   ],
   "vim.insertModeKeyBindingsNonRecursive": [],
 
   "vim.normalModeKeyBindings": [
     {
-      "before": [":"],
-      "commands": ["workbench.action.showCommands"],
+      "before": ["leader", "f", "f"],
+      "commands": ["workbench.action"],
       "silent": true
     },
     {
@@ -120,6 +151,56 @@
     {
       "before": ["<leader>", "g", "g"],
       "commands": ["workbench.action.togglePanel"]
+    },
+    {
+      "before": ["<C-w>", "v"],
+      "commands": ["workbench.action.splitEditor"]
+    },
+    {
+      "before": ["<C-w>", "s"],
+      "commands": ["workbench.action.splitEditorDown"]
+    },
+    // move
+    {
+      "before": ["<C-h>"],
+      "after": ["<C-w>", "h"]
+    },
+    {
+      "before": ["<C-j>"],
+      "after": ["<C-w>", "j"]
+    },
+    {
+      "before": ["<C-k>"],
+      "after": ["<C-w>", "k"]
+    },
+    {
+      "before": ["<C-l>"],
+      "after": ["<C-w>", "l"]
+    },
+    {
+      "before": ["<leader>", "f", "f"],
+      "commands": ["workbench.action.quickOpen"]
+    },
+    {
+      "before": ["<leader>", "f", "b"],
+      "commands": ["workbench.action.showAllEditors"]
+    },
+    {
+      "before": ["<leader>", "f", "s"],
+      "commands": ["workbench.action.findInFiles"]
+    },
+    {
+      "before": ["<leader>", "r", "n"],
+      "commands": ["editor.action.rename"]
+    },
+    {
+      "before": ["<leader>", "f", "m"],
+      "commands": ["editor.action.format"]
+    },
+
+    {
+      "before": ["<leader>", "r", "a"],
+      "commands": ["editor.action.rename"]
     }
   ],
 
@@ -201,7 +282,7 @@
 
   "vim.leader": "<space>",
   "vim.handleKeys": {
-    // "<C-a>": false,
+    "<C-a>": false,
     "<C-[>": false,
     "<C-]>": false,
     "<C-f>": false,
@@ -212,7 +293,8 @@
     "<C-x>": false,
     "<C-k>": false,
     "<C-o>": false,
-    "<C-y>": false
+    "<C-y>": false,
+    "<C-p>": false
   },
 
   "workbench.colorTheme": "Catppuccin Mocha",
