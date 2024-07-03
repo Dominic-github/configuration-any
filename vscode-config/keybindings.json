@@ -14,8 +14,8 @@
   },
   {
     "key": "ctrl+h",
-    "command": "",
-    "when": "vim.active && vim.mode=='Insert'"
+    "command": "editor.action.startFindReplaceAction",
+    "when": "editorFocus && vim.active && vim.mode=='Insert'"
   },
 
   {
