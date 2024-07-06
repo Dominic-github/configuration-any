@@ -117,5 +117,66 @@
     "key": "alt+k",
     "command": "workbench.action.quickOpenNavigatePrevious",
     "when": "inQuickOpen"
+  },
+
+  {
+    "key": "alt+shift+h",
+    "command": "cursorLeftSelect",
+    "when": "editorTextFocus"
+  },
+  {
+    "command": "cursorDownSelect",
+    "key": "alt+shift+j",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+shift+k",
+    "command": "cursorUpSelect",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+shift+l",
+    "command": "cursorRightSelect",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+b",
+    "command": "cursorWordStartLeft",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+w",
+    "command": "cursorWordEndRight",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+shift+b",
+    "command": "cursorWordStartLeftSelect",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+shift+w",
+    "command": "cursorWordEndRightSelect",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+u",
+    "command": "cursorPageUp",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+d",
+    "command": "cursorPageDown",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+shift+u",
+    "command": "cursorPageUpSelect",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+shift+n",
+    "command": "cursorPageDownSelect",
+    "when": "editorTextFocus"
   }
 ]
