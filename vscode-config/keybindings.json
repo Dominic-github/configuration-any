@@ -21,19 +21,8 @@
   {
     "key": "ctrl+k",
     "command": "workbench.action.navigateUp",
-    "when": "vim.active && vim.mode!='Insert'"
+    "when": "!filesExplorerFocus && vim.active && vim.mode!='Insert'"
   },
-  {
-    "key": "ctrl+k",
-    "command": "workbench.files.action.focusOpenEditorsView",
-    "when": "filesExplorerFocus && vim.active && vim.mode!='Insert'"
-  },
-  {
-    "key": "ctrl+k",
-    "command": "workbench.action.navigateUp",
-    "when": "vim.mode == 'Normal' "
-  },
-
   {
     "key": "ctrl+j",
     "command": "workbench.action.navigateDown",
