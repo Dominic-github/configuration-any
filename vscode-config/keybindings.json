@@ -42,7 +42,7 @@
   {
     "key": "ctrl+l",
     "command": "workbench.action.navigateRight",
-    "when": "vim.active && vim.mode!='Insert'"
+    "when": "vim.active && vim.mode!='Insert' && !terminal.active "
   },
 
   {
