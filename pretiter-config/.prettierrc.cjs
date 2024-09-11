@@ -1,4 +1,5 @@
-// Updated by Dominic-github
+// Author: Dominic
+// Github: https://github.com/Dominic-github/
 module.exports = {
   "arrowParens": "always",
   "semi": false,

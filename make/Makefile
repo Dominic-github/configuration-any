@@ -1,3 +1,6 @@
+# Author: Dominic
+# Github: https://github.com/Dominic-github/
+ 
 # Global
 # Check Os
 ifdef OS # Windown

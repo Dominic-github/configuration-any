@@ -1,3 +1,5 @@
+// Author: Dominic
+// Github: https://github.com/Dominic-github/
 {
   "grunt.autoDetect": "on",
   "git.terminalGitEditor": true,
