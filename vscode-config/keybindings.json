@@ -6,6 +6,12 @@
   // Move line up and down arrow
 
   {
+    "key": "ctrl+shift+alt+o",
+    "command": "workbench.action.files.openFolder",
+    "when": ""
+  },
+
+  {
     "key": "ctrl+w",
     "command": "",
     "when": "explorerViewletFocus && foldersViewVisible && !inputFocus && workbench.explorer.openEditorsView.active && vim.active && vim.mode!='Insert'"
