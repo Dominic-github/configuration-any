@@ -1,109 +1,87 @@
 [theme]
 name = "vesper"
 auto_switch = false
-onboarding = false
-
-[keys]
-
-# ============================================================
-# PREFIX
-# ============================================================
-
-prefix = "ctrl+b"
-
-
-# ============================================================
-# PANE NAVIGATION
-# ============================================================
-
-focus_pane_left = ["prefix+h", "ctrl+alt+h"]
-focus_pane_down = ["prefix+j", "ctrl+alt+j"]
-focus_pane_up = ["prefix+k", "ctrl+alt+k"]
-focus_pane_right = ["prefix+l", "ctrl+alt+l"]
-
-
-# ============================================================
-# TABS
-# ============================================================
-
-next_tab = ["prefix+n", "ctrl+alt+]"]
-previous_tab = ["prefix+p", "ctrl+alt+["]
-
-new_tab = ["prefix+c", "ctrl+alt+c"]
-close_tab = "prefix+shift+x"
-rename_tab = "prefix+shift+t"
-
-
-# ============================================================
-# PANE
-# ============================================================
-
-split_vertical = ["prefix+v", "ctrl+alt+d"]
-split_horizontal = ["prefix+minus"]
-
-close_pane = "prefix+x"
-zoom = ["prefix+z", "ctrl+alt+z"]
-
-
-# ============================================================
-# WORKSPACE
-# ============================================================
-
-goto = "prefix+f"
-workspace_picker = "prefix+w"
-
-new_workspace = "prefix+shift+n"
-rename_workspace = "prefix+shift+w"
-close_workspace = "prefix+shift+d"
-
-
-# ============================================================
-# SIDEBAR
-# ============================================================
-
-toggle_sidebar = "prefix+a"
-
-
-# ============================================================
-# NAVIGATE MODE
-# ============================================================
-
-navigate_pane_left = "h"
-navigate_pane_down = "j"
-navigate_pane_up = "k"
-navigate_pane_right = "l"
-
-
-# ============================================================
-# COPY / SCROLLBACK
-# ============================================================
-
-copy_mode = "prefix+["
-edit_scrollback = "prefix+e"
-
-
-# ============================================================
-# SYSTEM
-# ============================================================
-
-reload_config = "prefix+shift+r"
-help = "prefix+?"
-settings = "prefix+s"
-detach = "prefix+q"
-
-
-# ============================================================
-# TABS / WORKSPACES INDEX
-# ============================================================
-
-switch_tab = "prefix+1..9"
-switch_workspace = "prefix+shift+1..9"
 
 [ui]
 status_indicators = "symbols"
 
 [ui.sound]
-enabled = true
+enabled = false
 
 [ui.toast]
 delivery = "system"
+
+[keys]
+prefix = "ctrl+b"
+
+# ============================================================
+# 1. PANE NAVIGATION (VIM STYLE - ZERO PREFIX)
+# ============================================================
+focus_pane_left  = ["alt+h", "prefix+h"]
+focus_pane_down  = ["alt+j", "prefix+j"]
+focus_pane_up    = ["alt+k", "prefix+k"]
+focus_pane_right = ["alt+l", "prefix+l"]
+
+# ============================================================
+# 2. RESIZE PANE TRỰC TIẾP (KHÔNG CẦN VÀO RESIZE MODE)
+# ============================================================
+resize_pane_left  = "alt+left"
+resize_pane_down  = "alt+down"
+resize_pane_up    = "alt+up"
+resize_pane_right = "alt+right"
+
+# ============================================================
+# 3. SWAP PANE (ĐỔI CHỖ PANE TỨC THÌ)
+# ============================================================
+swap_pane_left  = "alt+shift+h"
+swap_pane_down  = "alt+shift+j"
+swap_pane_up    = "alt+shift+k"
+swap_pane_right = "alt+shift+l"
+
+# ============================================================
+# 4. TẠO & QUẢN LÝ PANE
+# ============================================================
+split_vertical   = ["alt+v", "prefix+v"]       # Chia dọc sang phải
+split_horizontal = ["alt+s", "prefix+minus"]   # Chia ngang xuống dưới
+zoom             = ["alt+z", "prefix+z"]       # Phóng to / thu nhỏ pane
+close_pane       = ["alt+w", "prefix+x"]       # Đóng pane hiện tại
+
+# ============================================================
+# 5. QUẢN LÝ TAB (LẸ TAY TUYỆT ĐỐI)
+# ============================================================
+new_tab          = ["alt+c", "prefix+c"]
+previous_tab     = ["alt+[", "prefix+p"]
+next_tab         = ["alt+]", "prefix+n"]
+close_tab        = ["alt+shift+w", "prefix+shift+x"]
+rename_tab       = ["alt+shift+t", "prefix+shift+t"]
+switch_tab       = ["alt+1..9", "prefix+1..9"] # Alt + 1..9 nhảy thẳng tab
+
+# ============================================================
+# 6. WORKSPACE TOÀN DIỆN (ĐÃ GIẢI PHÓNG PREFIX)
+# ============================================================
+workspace_picker = ["alt+o", "prefix+w"]
+new_workspace    = ["alt+n", "prefix+shift+n"]
+close_workspace  = ["alt+shift+d", "prefix+shift+d"] # Đóng workspace trực tiếp
+rename_workspace = ["alt+shift+e", "prefix+shift+w"]
+switch_workspace = ["alt+shift+1..9", "prefix+shift+1..9"] # Alt + Shift + 1..9 nhảy workspace
+
+# ============================================================
+# 7. TÌM KIẾM, SIDEBAR & AGENT
+# ============================================================
+goto             = ["alt+f", "prefix+f"]       # Quick Palette / Search
+toggle_sidebar   = ["alt+b", "prefix+a"]       # Ẩn/Hiện Sidebar AI Agents
+
+# ============================================================
+# 8. COPY MODE & SCROLLBACK
+# ============================================================
+# Bấm Alt + / để vào mode cuộn & bôi đen text (sau đó lăn chuột hoặc bấm PageUp/Down)
+copy_mode        = ["alt+slash", "prefix+["]
+edit_scrollback  = "prefix+e"
+
+# ============================================================
+# 9. SYSTEM & SETTINGS
+# ============================================================
+reload_config    = ["alt+r", "prefix+shift+r"]
+settings         = ["alt+comma", "prefix+s"]
+detach           = ["alt+shift+q", "prefix+q"]
+help             = ["alt+shift+slash", "prefix+?"]
