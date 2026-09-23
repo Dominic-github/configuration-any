@@ -1,0 +1,109 @@
+[theme]
+name = "vesper"
+auto_switch = false
+onboarding = false
+
+[keys]
+
+# ============================================================
+# PREFIX
+# ============================================================
+
+prefix = "ctrl+b"
+
+
+# ============================================================
+# PANE NAVIGATION
+# ============================================================
+
+focus_pane_left = ["prefix+h", "ctrl+alt+h"]
+focus_pane_down = ["prefix+j", "ctrl+alt+j"]
+focus_pane_up = ["prefix+k", "ctrl+alt+k"]
+focus_pane_right = ["prefix+l", "ctrl+alt+l"]
+
+
+# ============================================================
+# TABS
+# ============================================================
+
+next_tab = ["prefix+n", "ctrl+alt+]"]
+previous_tab = ["prefix+p", "ctrl+alt+["]
+
+new_tab = ["prefix+c", "ctrl+alt+c"]
+close_tab = "prefix+shift+x"
+rename_tab = "prefix+shift+t"
+
+
+# ============================================================
+# PANE
+# ============================================================
+
+split_vertical = ["prefix+v", "ctrl+alt+d"]
+split_horizontal = ["prefix+minus"]
+
+close_pane = "prefix+x"
+zoom = ["prefix+z", "ctrl+alt+z"]
+
+
+# ============================================================
+# WORKSPACE
+# ============================================================
+
+goto = "prefix+f"
+workspace_picker = "prefix+w"
+
+new_workspace = "prefix+shift+n"
+rename_workspace = "prefix+shift+w"
+close_workspace = "prefix+shift+d"
+
+
+# ============================================================
+# SIDEBAR
+# ============================================================
+
+toggle_sidebar = "prefix+a"
+
+
+# ============================================================
+# NAVIGATE MODE
+# ============================================================
+
+navigate_pane_left = "h"
+navigate_pane_down = "j"
+navigate_pane_up = "k"
+navigate_pane_right = "l"
+
+
+# ============================================================
+# COPY / SCROLLBACK
+# ============================================================
+
+copy_mode = "prefix+["
+edit_scrollback = "prefix+e"
+
+
+# ============================================================
+# SYSTEM
+# ============================================================
+
+reload_config = "prefix+shift+r"
+help = "prefix+?"
+settings = "prefix+s"
+detach = "prefix+q"
+
+
+# ============================================================
+# TABS / WORKSPACES INDEX
+# ============================================================
+
+switch_tab = "prefix+1..9"
+switch_workspace = "prefix+shift+1..9"
+
+[ui]
+status_indicators = "symbols"
+
+[ui.sound]
+enabled = true
+
+[ui.toast]
+delivery = "system"
